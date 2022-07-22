@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<section class="pt-5">
+    <div class="container">
+        <h1>Featured Destinations</h1>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid</p>
+    </div>
+    <div class="swiper destinations-slider swiper-padding">
+        <div class="swiper-wrapper">
+            {% include 'blog_website/components/_index_swiper_item.html'%}
+        </div>
+        {% include 'blog_website/components/_index_swiper_buttons.html'%}
+    </div>
+</section>
+<!-- Divider Section -->
+{% include 'blog_website/components/_index_comments.html'%}
+<!-- Instagram section-->
+{% include 'blog_website/components/_index_blog_pics.html'%}
+
+<!-- Travel essentials section -->
+{% include 'blog_website/components/_index_essentials.html'%}
+
+<!-- Subscribe section -->
+{% include 'blog_website/components/_index_subscribe.html'%}
+
+<!-- Top categories section -->
+{% include 'blog_website/components/_index_categories.html'%}
+
+<!-- Sponsors section-->
+{% include 'blog_website/components/_index_sponsors.html'%}
+
+
+{% endblock main %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<section class="hero bg-center bg-cover" style="background: url({% static 'blog_website/img/hero-banner.jpg' %})">
+    <div class="dark-overlay py-5">
+        <div class="overlay-content">
+            <div class="container py-5 text-white text-center">
+                <h1>Blog listing</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog listing -->
+<section class="pt-5">
+    <div class="container pt-5">
+        <div class="row mb-5">
+            <div class="col-lg-8 left ">
+                <div class="row text-center">
+                    {% include 'blog_website/components/_listing_post_item.html'%}
+
+                </div>
+                <!-- Listing navigation -->
+                <div class="p-4 bg-light mb-5">
+                    <div class="row gy-2">
+                        <div class="col-sm-6 text-center text-sm-start"><a class="btn btn-outline-secondary btn-sm"
+                                                                           href="#!"><i
+                                class="fas fa-angle-left me-2"></i>Prev posts</a></div>
+                        <div class="col-sm-6 text-center text-sm-end"><a class="btn btn-outline-secondary btn-sm"
+                                                                         href="#!">Next posts<i
+                                class="fas fa-angle-right ms-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            {% include 'blog_website/layouts/right.html' %}
+
+        </div>
+    </div>
+</section>
+{% endblock main %}

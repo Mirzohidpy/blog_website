@@ -1,0 +1,13 @@
+{% load static %}
+
+    <div class="swiper-slide h-auto">
+        <a class="destination d-flex align-items-end bg-center bg-cover"
+           href="{% url 'post' %}"
+           style="background: url({% static 'blog_website/img/travel-home-4.jpg' %})">
+            <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Paris</p>
+                <h2 class="h3 mb-4">France</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+            </div>
+        </a>
+    </div>

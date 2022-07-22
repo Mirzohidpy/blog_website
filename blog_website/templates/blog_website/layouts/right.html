@@ -1,0 +1,134 @@
+{% load static %}
+<div class="col-lg-4 right">
+    <!-- About me widget -->
+    <div class="mb-5 text-center"><img class="mb-3 rounded-circle img-thumbnail shadow-sm"
+                                       src="{% static 'blog_website/img/author.jpg' %}" alt="" width="110">
+        <h3 class="h4">About me</h3>
+        <p class="text-sm text-muted px-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod.</p><img class="d-block mx-auto mb-3"
+                                src="{% static 'blog_website/img/signature.png' %}" alt="" width="60">
+        <ul class="list-inline text-sm mb-0">
+            <li class="list-inline-item"><a class="reset-anchor" href="#!"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item"><a class="reset-anchor" href="#!"><i
+                    class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="#!"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item"><a class="reset-anchor" href="#!"><i
+                    class="fab fa-youtube"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="#!"><i
+                    class="fab fa-vimeo-v"></i></a></li>
+        </ul>
+    </div>
+    <!-- Categories widget -->
+    <div class="mb-5 text-center"><a class="category reset-anchor bg-cover bg-center mb-2" href="#!"
+                                     style="background: url({% static 'blog_website/img/category-1.jpg' %})">
+        <p class="category-title text-uppercase small">Lifestyle</p></a><a
+            class="category reset-anchor bg-cover bg-center mb-2" href="#!"
+            style="background: url({% static 'blog_website/img/category-2.jpg' %})">
+        <p class="category-title text-uppercase small">Travel</p></a><a
+            class="category reset-anchor bg-cover bg-center" href="#!"
+            style="background: url({% static 'blog_website/img/category-3.jpg' %})">
+        <p class="category-title text-uppercase small">Vacation</p></a></div>
+    <!-- Newsletter widget -->
+    <div class="px-4 py-5 bg-light mb-5 text-center">
+        <h3 class="h5"><i class="far fa-envelope me-2"></i>Join the family</h3>
+        <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.</p>
+        <form action="#">
+            <div class="mb-1">
+                <input class="form-control form-control-sm" type="email" name="email"
+                       placeholder="Emaill address">
+            </div>
+            <div class="mb-0">
+                <button class="btn btn-dark w-100 btn-sm" type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <!-- Latest posts widget -->
+    <div class="mb-5">
+        <h3 class="h5">Latest posts</h3>
+        <p class="text-sm text-muted mb-4">Lorem ipsum dolor sit, consectetur adipisicing elit, sed do
+            eiusmod.</p>
+        <ul class="list-unstyled">
+            <li class="d-flex mb-1"><a href="{% url 'post' %}"><img
+                    src="{% static 'blog_website/img/recent-posts-thumb-1.jpg' %}" alt="" width="80"></a>
+                <div class="media-body ms-3">
+                    <p class="small text-primary text-uppercase mb-0">5 Aug 2018</p>
+                    <h6 class="mb-1"><a class="reset-anchor" href="{% url 'post' %}">The top climbing
+                        tours</a></h6>
+                    <p class="small text-muted">Lorem ipsum dolor sit, consectetur adipisicing elit,
+                        sed.</p>
+                </div>
+            </li>
+            <li class="d-flex mb-1"><a href="{% url 'post' %}"><img
+                    src="{% static 'blog_website/img/recent-posts-thumb-2.jpg' %}" alt="" width="80"></a>
+                <div class="media-body ms-3">
+                    <p class="small text-primary text-uppercase mb-0">5 Aug 2018</p>
+                    <h6 class="mb-1"><a class="reset-anchor" href="{% url 'post' %}">Travel guide to
+                        Canada</a></h6>
+                    <p class="small text-muted">Lorem ipsum dolor sit, consectetur adipisicing elit,
+                        sed.</p>
+                </div>
+            </li>
+            <li class="d-flex mb-1"><a href="{% url 'post' %}"><img
+                    src="{% static 'blog_website/img/recent-posts-thumb-3.jpg' %}" alt="" width="80"></a>
+                <div class="media-body ms-3">
+                    <p class="small text-primary text-uppercase mb-0">5 Aug 2018</p>
+                    <h6 class="mb-1"><a class="reset-anchor" href="{% url 'post' %}">A day in Tailand</a>
+                    </h6>
+                    <p class="small text-muted">Lorem ipsum dolor sit, consectetur adipisicing elit,
+                        sed.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Instagram widget -->
+    <div class="mb-5">
+        <h3 class="h5">Follow on Instagram</h3>
+        <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.</p>
+        <div class="row gx-0">
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-1.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-2.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-3.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-4.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-5.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-6.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-8.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+            <div class="col-3"><a class="instagram-item overlay-hover-dark-sm d-block w-100" href="#!">
+                <div class="overlay-content"><img class="img-fluid"
+                                                  src="{% static 'blog_website/img/instagram-1.jpg' %}"
+                                                  alt=""></div>
+            </a></div>
+        </div>
+    </div>
+</div>
